@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 //selectedImage: UIImage(systemName: "star.circle.fill")?.withRenderingMode(.alwaysOriginal)
                 selectedImage: UIImage(systemName: "star.circle.fill")?.withRenderingMode(.alwaysOriginal)
             )
-            mainListViewController.tabBarItem.selectedImage?.withTintColor(.systemBlue)
+            
             let navigationController = UINavigationController(rootViewController: mainListViewController    )
             /*let favouritesViewController = FavouriteHouseListViewController()
             favouritesViewController.tabBarItem = UITabBarItem(
