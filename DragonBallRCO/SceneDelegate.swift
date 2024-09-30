@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // Instanciamos un tab bar
             let tabBarController = UITabBarController()
             // Instanciamos nuestra lista de casas
-            let mainListViewController = MainListViewController()
+            let mainListViewController = LoginViewController() //MainListViewController()
             mainListViewController.tabBarItem = UITabBarItem(
                 title: "Universo de Dragon Ball",
                 image: UIImage(systemName: "star.circle"),

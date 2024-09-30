@@ -19,6 +19,10 @@ struct Heroes: Codable, Hashable {
     
 }
 
-typealias heroType = [String:Heroes]
-var Hero = heroType()
+struct Bootcamps: Codable , Hashable {
+    let name: String
+    let id: String
+}
+//typealias heroType = [String:Heroes]
+//var Hero = heroType()
 

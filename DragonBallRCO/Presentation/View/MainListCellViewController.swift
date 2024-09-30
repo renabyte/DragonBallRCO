@@ -14,14 +14,20 @@ final class MainListCellViewController: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelForm: UILabel!
     @IBOutlet weak var cellImageForms: UIImageView!
     // MARK: - Configuration
-    func configure(with heroe: Heroes) {
+    func configure(with heroe: Hero) {
         // RawValue lo utilizamos para obtener
         // la representacion del String
-        cellLabel.text = heroe.name
+        
+        //cellLabelForm.font = UIFont
+        
+        /*cellLabel.text = "TTT"
+        cellLabelForm.text = "dfd" //heroe.name
         cellLabel.font = UIFont(name: "Avenir", size: 5)
-        cellLabel.font = UIFont.boldSystemFont(ofSize: 16.0)
+        cellLabel.font = UIFont.boldSystemFont(ofSize: 16.0)*/
+        
         //guard let imageURL = heroe.photo else {
         //    return
         //}
@@ -34,11 +40,15 @@ final class MainListCellViewController: UITableViewCell {
             cellImageView.layer.borderColor = UIColor.cyan.cgColor
             // Carga de la imagen
             cellImageView.setImage(url: imageURL)
+            //cellImageForms.setImage(url: imageURL)
             
         }
         
         cellImageForms.image = UIImage(systemName:"bolt")
         cellImageForms.tintColor = .systemYellow
-        //cellImageView.selectedImage = UIImage(systemName: "bolt.fill")
+        cellImageForms.contentMode = .scaleAspectFill
+        cellLabel.text = heroe.name
+        //cellImageForms.selectedImage = UIImage(systemName: "bolt.fill")
+        cellLabel.font = UIFont.boldSystemFont(ofSize: 16.0)
     }
 }

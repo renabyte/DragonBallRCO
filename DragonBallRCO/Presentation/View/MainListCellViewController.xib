@@ -28,20 +28,32 @@
                                     <constraint firstAttribute="height" constant="64" id="xak-4E-Rhb"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-F2-Bq9">
-                                <rect key="frame" x="80" y="35.333333333333336" width="277" height="20.333333333333336"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-F2-Bq9">
+                                <rect key="frame" x="80" y="35.333333333333336" width="41.333333333333343" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uY-DX-Ymh">
+                                <rect key="frame" x="137.33333333333334" y="95" width="275.66666666666663" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YW8-uJ-U7X">
-                                <rect key="frame" x="373" y="25.666666666666664" width="40" height="39.999999999999993"/>
+                                <rect key="frame" x="366" y="0.0" width="35" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="1dE-h8-RdP"/>
-                                    <constraint firstAttribute="height" constant="40" id="Zbp-7t-EGp"/>
+                                    <constraint firstAttribute="width" constant="35" id="4S3-kK-ulG"/>
+                                    <constraint firstAttribute="height" constant="35" id="lhT-vc-rWI"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YW8-uJ-U7X" secondAttribute="trailing" constant="12" id="ABU-eN-eFk"/>
+                            <constraint firstAttribute="trailing" secondItem="6uY-DX-Ymh" secondAttribute="trailing" id="BPw-m6-Vdk"/>
+                            <constraint firstItem="6uY-DX-Ymh" firstAttribute="top" secondItem="YW8-uJ-U7X" secondAttribute="bottom" constant="60" id="k8U-af-OMZ"/>
+                            <constraint firstAttribute="bottom" secondItem="YW8-uJ-U7X" secondAttribute="bottom" constant="12" id="ujQ-DK-aXc"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
@@ -56,6 +68,7 @@
                 <outlet property="cellImageForms" destination="YW8-uJ-U7X" id="XhU-kv-yeJ"/>
                 <outlet property="cellImageView" destination="AJu-y1-O9F" id="G2h-oV-6HM"/>
                 <outlet property="cellLabel" destination="7SE-F2-Bq9" id="g9D-rK-rYp"/>
+                <outlet property="cellLabelForm" destination="6uY-DX-Ymh" id="sR9-rq-2cV"/>
             </connections>
             <point key="canvasLocation" x="274.04580152671753" y="-63.732394366197184"/>
         </tableViewCell>
